@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Validacion con Regex</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <form id="form">
+    <div>
+    <label for="datename">Nombres y Apellidos</label>
+    <input id="datename" name="datename" type="text" placeholder="Ingrese su nombre y apellido" autocomplete="off" pattern="^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]{1,24}[\s]*)+^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]{1,24}[\s]*)" autofocus required>
+    <br>
+    <label for="dni">DNI</label>
+    <input id="dni" name="dni" type="number" placeholder="Ingrese su DNI" autocomplete="off" pattern="[0-9]{8}" required>
+    <br>
+    <label for="date">Fecha de Nacimiento</label>
+    <input id="date" name="date" type="date" placeholder="Ingrese su Fecha de Nacimiento" autocomplete="off" pattern="" required>
+    <br>
+    <label for="celular">Celular</label>
+    <input id="celular" name="celular" type="number" placeholder="Ingrese su Número Celular" autocomplete="off" pattern="[9]{1}[0-9]{8}" required>
+    <br>
+    <label for="fono">Teléfono</label>
+    <input id="fono" name="fono" type="number" placeholder="Ingrese su Número de Teléfono de Casa" autocomplete="off" pattern="[0-9]{9}" required>
+    <br>
+    <label for="contrasenia">Contraseña</label>
+    <input id="contrasenia" name="contrasenia" type="text" placeholder="Ingrese su Contraseña" autocomplete="off" pattern="" required>
+    <br>
+    <label for="confirmcontrasenia">Contraseña</label>
+    <input id="confirmcontrasenia" name="confirmcontrasenia" type="text" placeholder="Confirme su Contraseña" autocomplete="off" pattern="" required>
+    <br>
+    <label for="coment">Contraseña</label>
+    <textarea id="coment" name="coment" type="text" placeholder="Ingrese su comentario" autocomplete="off" pattern="" required></textarea>
+    <br>
+    
+
+    <input type="submit" value="Enviar">
+    </div>
+  </form>
+  <script src="assets/js/app.js" charset="utf-8"></script>
+</body>
+</html>
